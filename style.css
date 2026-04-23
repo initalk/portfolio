@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.home .about .work .insites .contact {
+  padding-top: 86px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-snap-type: y mandatory;
+  margin: 0;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+section {
+  scroll-snap-align: start;
+  padding: 100px 0;
+}
+
+.about,
+.insites,
+.work,
+.contact {
+  font-family: 'Segoe UI', sans-serif;
+}
