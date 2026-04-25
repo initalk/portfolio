@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="work.css" />
+    <link rel="stylesheet" href="insight.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
     <!-- nav bar 섹션 -->
-    <nav class="navbar" class="sticky">
+    <nav class="navbar">
       <div class="max-width">
         <div class="logo">
           <a href="#home">Port<span>folio.</span></a>
@@ -20,7 +25,6 @@
           <li><a href="#about">About Me</a></li>
           <li><a href="#work">Works</a></li>
           <li><a href="#insight">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -36,29 +40,104 @@
     </section>
 
     <!-- about 섹션 -->
-    <section id="about">
-      <h1>About Me</h1>
-      <p>자기소개 내용</p>
+    <section id="about" class="about">
+      <div class="max-width">
+        <h2 class="title">About</h2>
+        <div class="about-content">
+          <div class="left">
+            <img src="img/profile.jpg" alt="profile" />
+          </div>
+          <div class="right">
+            <div class="about-text">I'm JungMin LEE</div>
+            <p>저는 현재 중부대학교에 재학 중인 2학년 이정민입니다.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- work 섹션 -->
-    <section id="work">
-      <h1>Works</h1>
-      <p>작업물 소개</p>
+    <section id="work" class="work">
+      <div class="max-width">
+        <h2 class="title">Works</h2>
+        <div class="work-content">
+          <a href="https://hcj-regular.vercel.app/" class="work-card">
+            <img src="img/work1.png" alt="작업물 1" />
+            <h3>HCJ_Demo</h3>
+          </a>
+          <a href="https://hcj2-pi.vercel.app/" class="work-card">
+            <img src="img/work2.png" alt="작업물 2" />
+            <h3>HCJ_regular</h3>
+          </a>
+          <a href="https://middle-project-plum.vercel.app/" class="work-card">
+            <img src="img/work3.png" alt="작업물 3" />
+            <h3>team_project</h3>
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- insight 섹션 -->
-    <section id="insights">
-      <h1>Blog</h1>
-      <p>블로그 글</p>
+    <section id="insights" class="insight">
+      <div class="max-width">
+        <h2 class="title">Blog</h2>
+        <div class="insight-content">
+          <div class="left">
+            <a href="https://github.com/initalk">
+              <div class="site">
+                <div class="site-img">
+                  <img src="img/github.png" alt="" />
+                  <div class="site-text">GitHub</div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique iusto a quam quidem nobis obcaecati amet at
+                    eveniet, aperiam ratione quae quasi doloribus nisi iste
+                    laboriosam velit exercitationem molestiae autem.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="center">
+            <a href="https://blog.naver.com/initalk">
+              <div class="site">
+                <div class="site-img">
+                  <img src="img/blog.png" alt="" />
+                  <div class="site-text">BLOG</div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique iusto a quam quidem nobis obcaecati amet at
+                    eveniet, aperiam ratione quae quasi doloribus nisi iste
+                    laboriosam velit exercitationem molestiae autem.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="right">
+            <a href="https://vercel.com/initalks-projects">
+              <div class="site">
+                <div class="site-img">
+                  <img src="img/vercel.png" alt="" />
+                  <div class="site-text">Vercel</div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique iusto a quam quidem nobis obcaecati amet at
+                    eveniet, aperiam ratione quae quasi doloribus nisi iste
+                    laboriosam velit exercitationem molestiae autem.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- contact 섹션 -->
-    <section id="contact">
-      <h1>Contact</h1>
-      <p>연락처 정보</p>
-    </section>
-
-    <footer></footer>
+    <footer>
+      <span
+        >Created By <a href="#">JungMin LEE</a> | ©2026 ALL rights
+        reserved</span
+      >
+    </footer>
   </body>
 </html>

@@ -1,0 +1,35 @@
+.about {
+  padding: 100px 0;
+  transition: all 0.3s ease;
+}
+
+.about .title::after {
+  content: 'Who am I';
+}
+
+.about .about-content {
+  margin-bottom: 100px;
+}
+
+.about .about-content .left {
+  width: 45%;
+}
+
+.about .about-content .left img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.about .about-content .right {
+  width: 55%;
+  padding-bottom: 50px;
+}
+
+.about .about-content .right .about-text {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}

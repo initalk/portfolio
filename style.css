@@ -5,7 +5,7 @@
   text-decoration: none;
 }
 
-.home .about .work .insites .contact {
+.home .about .work .insites {
   padding-top: 86px;
 }
 html {
@@ -30,7 +30,53 @@ section {
 
 .about,
 .insites,
-.work,
-.contact {
+.work {
   font-family: 'Segoe UI', sans-serif;
+}
+
+.about .title,
+.insites .title,
+.work .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 30px 0 100px 0;
+  padding-bottom: 8px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about .title::before,
+.insites .title::before,
+.work .title::before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 160px;
+  height: 3px;
+  background-color: black;
+  transform: translateX(-50%);
+}
+
+.about .title::after,
+.insites .title::after,
+.work .title::after {
+  content: '';
+  position: absolute;
+  bottom: -38px;
+  left: 50%;
+  font-size: 20px;
+  color: rgb(255, 164, 45);
+  background-color: white;
+  transform: translateX(-50%);
+}
+
+.about .about-content,
+.insites .insites-content,
+.work .work-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

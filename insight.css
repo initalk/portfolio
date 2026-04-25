@@ -1,0 +1,69 @@
+.insight {
+  padding: 100px 0;
+  transition: all 0.3s ease;
+}
+
+.insight .title::after {
+  content: 'What My Site';
+}
+
+.insight .insight-content {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.insight .insight-content .left {
+  width: 32%;
+}
+
+.insight .insight-content .center {
+  width: 32%;
+}
+
+.insight .insight-content .right {
+  width: 32%;
+}
+
+.insight .insight-content a {
+  display: flex;
+  text-align: center;
+  color: black;
+}
+
+.insight .insight-content a,
+.insight .insight-content a:visited,
+.insight .insight-content a:active,
+.insight .insight-content a:hover {
+  text-decoration: none;
+}
+
+.insight .insight-content .site {
+  background-color: rgb(240, 236, 236);
+  border-radius: 6px;
+  padding: 25px 35px;
+  transition: all 0.3s ease;
+}
+
+.insight .insight-content .site img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid rgb(255, 164, 45);
+  transition: all 0.3s ease;
+}
+
+.insight .insight-content .site-text {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.insight .insight-content p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.insight .insight-content .site:hover img {
+  border-color: white;
+}

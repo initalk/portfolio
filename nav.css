@@ -4,6 +4,7 @@
   padding: 20px 0;
   z-index: 999;
   transition: all 0.3s ease;
+  background-color: rgb(13, 13, 61);
 }
 
 .navbar .max-width {
