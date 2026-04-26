@@ -60,9 +60,7 @@
   }
 }
 
-/* 기본 스타일은 지금 작성하신 CSS 유지 */
 
-/* 모바일 화면용 (예: 최대 768px 이하) */
 @media screen and (max-width: 768px) {
   /* navbar */
   .navbar .logo {
@@ -70,12 +68,12 @@
     width: 100%;
   }
   .navbar .menubar {
-    display: none; /* 메뉴 숨기기 */
+    display: none; 
   }
 
   /* about 섹션 */
   .about-content {
-    flex-direction: column; /* 세로 정렬 */
+    flex-direction: column; 
     align-items: center;
   }
   .about-content .left,
@@ -84,7 +82,7 @@
     text-align: center;
   }
   .about-content img {
-    max-width: 80%; /* 이미지 크기 조정 */
+    max-width: 80%; 
     height: auto;
     margin-bottom: 20px;
   }
@@ -92,25 +90,25 @@
   /* work 섹션 */
   @media screen and (max-width: 768px) {
     .work-content {
-      flex-direction: column; /* 세로 정렬 */
-      align-items: center; /* 가운데 정렬 */
-      padding: 0; /* 좌우 여백 제거 */
+      flex-direction: column; 
+      align-items: center; 
+      padding: 0; 
     }
 
     .work-card {
-      width: 90%; /* 화면 폭에 맞게 줄이기 */
-      max-width: 350px; /* 너무 커지지 않도록 제한 */
-      margin-bottom: 20px; /* 카드 간격 */
+      width: 90%; 
+      max-width: 350px; 
+      margin-bottom: 20px; 
     }
 
     .work-card img {
-      width: 100%; /* 카드 폭에 맞게 줄어듦 */
-      height: auto; /* 비율 유지 */
+      width: 100%;
+      height: auto; 
       border-radius: 6px;
     }
   }
 
-  /* insight 섹션 */
+  /* blog 섹션 */
   .blog .blog-content {
     flex-direction: column;
     align-items: center;
@@ -129,7 +127,7 @@
   }
 
   .blog .blog-content .site img {
-    width: 100px; /* 모바일에서 더 작게 */
+    width: 100px; 
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
