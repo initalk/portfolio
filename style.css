@@ -5,7 +5,7 @@
   text-decoration: none;
 }
 
-.home .about .work .insites {
+.home .about .work .blog {
   padding-top: 86px;
 }
 html {
@@ -29,13 +29,13 @@ section {
 }
 
 .about,
-.insites,
+.blog,
 .work {
   font-family: 'Segoe UI', sans-serif;
 }
 
 .about .title,
-.insites .title,
+.blog .title,
 .work .title {
   position: relative;
   text-align: center;
@@ -47,7 +47,7 @@ section {
 }
 
 .about .title::before,
-.insites .title::before,
+.blog .title::before,
 .work .title::before {
   content: '';
   position: absolute;
@@ -60,7 +60,7 @@ section {
 }
 
 .about .title::after,
-.insites .title::after,
+.blog .title::after,
 .work .title::after {
   content: '';
   position: absolute;
@@ -73,7 +73,7 @@ section {
 }
 
 .about .about-content,
-.insites .insites-content,
+.blog .insites-content,
 .work .work-content {
   display: flex;
   align-items: center;

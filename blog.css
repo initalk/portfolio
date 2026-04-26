@@ -1,51 +1,51 @@
-.insight {
+.blog {
   padding: 100px 0;
   transition: all 0.3s ease;
 }
 
-.insight .title::after {
+.blog .title::after {
   content: 'What My Site';
 }
 
-.insight .insight-content {
+.blog .blog-content {
   margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
 }
 
-.insight .insight-content .left {
+.blog .blog-content .left {
   width: 32%;
 }
 
-.insight .insight-content .center {
+.blog .blog-content .center {
   width: 32%;
 }
 
-.insight .insight-content .right {
+.blog .blog-content .right {
   width: 32%;
 }
 
-.insight .insight-content a {
+.blog .blog-content a {
   display: flex;
   text-align: center;
   color: black;
 }
 
-.insight .insight-content a,
-.insight .insight-content a:visited,
-.insight .insight-content a:active,
-.insight .insight-content a:hover {
+.blog .blog-content a,
+.blog .blog-content a:visited,
+.blog .blog-content a:active,
+.blog .blog-content a:hover {
   text-decoration: none;
 }
 
-.insight .insight-content .site {
+.blog .blog-content .site {
   background-color: rgb(240, 236, 236);
   border-radius: 6px;
   padding: 25px 35px;
   transition: all 0.3s ease;
 }
 
-.insight .insight-content .site img {
+.blog .blog-content .site img {
   height: 150px;
   width: 150px;
   object-fit: cover;
@@ -54,16 +54,16 @@
   transition: all 0.3s ease;
 }
 
-.insight .insight-content .site-text {
+.blog .blog-content .site-text {
   font-size: 25px;
   font-weight: 600;
 }
 
-.insight .insight-content p {
+.blog .blog-content p {
   font-size: 18px;
   text-align: justify;
 }
 
-.insight .insight-content .site:hover img {
+.blog .blog-content .site:hover img {
   border-color: white;
 }
