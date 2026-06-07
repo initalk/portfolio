@@ -27,25 +27,72 @@
 
 .navbar .logo a span {
   color: rgb(255, 164, 45);
-  transition: all 0.3s ease;
+}
+
+.navbar .menubar {
+  display: flex;
+  align-items: center;
 }
 
 .navbar .menubar li {
   list-style-type: none;
-  margin: 5px 20px 0 0;
-  display: inline-block;
+  margin: 0 15px;
 }
 
 .navbar .menubar li a {
   display: block;
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
-  margin-left: 15px;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .navbar .menubar li a:hover {
   color: rgb(255, 164, 45);
+}
+
+.dark-mode-li {
+  display: flex;
+  align-items: center;
+  margin-left: 10px !important;
+}
+
+.dark-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.2s,
+    color 0.2s;
+}
+
+.dark-btn:hover {
+  transform: scale(1.1);
+  color: rgb(255, 164, 45);
+}
+
+.navbar .menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.navbar .menu-btn .bar {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
 }

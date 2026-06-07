@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,35 +12,126 @@
     <link rel="stylesheet" href="blog.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
-    <!-- nav bar 섹션 -->
     <nav class="navbar">
       <div class="max-width">
         <div class="logo">
-          <a href="#home">Port<span>folio.</span></a>
+          <a
+            href="#"
+            onclick="
+              switchTab('home')
+              return false
+            "
+            >Port<span>folio.</span></a
+          >
         </div>
-        <ul class="menubar">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#work">Works</a></li>
-          <li><a href="#insight">Blog</a></li>
+
+        <div class="menu-btn" id="hamburger-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="menubar" id="menu-bar">
+          <li>
+            <a
+              href="#"
+              onclick="
+                switchTab('home')
+                return false
+              "
+              class="menu-item active-menu"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="
+                switchTab('about')
+                return false
+              "
+              class="menu-item"
+              >About Me</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="
+                switchTab('skills')
+                return false
+              "
+              class="menu-item"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="
+                switchTab('work')
+                return false
+              "
+              class="menu-item"
+              >Works</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="
+                switchTab('insights')
+                return false
+              "
+              class="menu-item"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="
+                switchTab('contact')
+                return false
+              "
+              class="menu-item"
+              >Contact</a
+            >
+          </li>
+          <li class="dark-mode-li">
+            <button id="dark-mode-toggle" class="dark-btn">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
         </ul>
       </div>
     </nav>
 
-    <!-- home 섹션 -->
-    <section id="home" class="home">
+    <section id="home" class="tab-content active-tab">
       <div class="max-width">
         <div class="home-section">
           <div class="text-1">Hello! My Name is</div>
           <div class="text-2">JungMin <span>LEE</span></div>
+          <a
+            href="#"
+            onclick="
+              switchTab('about')
+              return false
+            "
+            class="home-btn"
+            >더 알아보기 <i class="fas fa-arrow-right"></i
+          ></a>
         </div>
       </div>
     </section>
 
-    <!-- about 섹션 -->
-    <section id="about" class="about">
+    <section id="about" class="about tab-content">
       <div class="max-width">
         <h2 class="title">About</h2>
         <div class="about-content">
@@ -49,75 +140,240 @@
           </div>
           <div class="right">
             <div class="about-text">I'm JungMin LEE</div>
-            <p>저는 현재 중부대학교에 재학 중인 2학년 이정민입니다.</p>
+            <p>
+              저는 현재 중부대학교에 재학 중인 2학년 이정민입니다. 늘 새로운
+              기술을 탐구하고 사용자를 배려하는 깔끔한 화면을 구현하는 것에 큰
+              보람을 느낍니다.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- work 섹션 -->
-    <section id="work" class="work">
+    <section id="skills" class="skills tab-content">
+      <div class="max-width">
+        <h2 class="title">Skills</h2>
+        <div class="skills-content">
+          <div class="skill-box">
+            <div class="skill-info"><span>HTML5</span><span>90%</span></div>
+            <div class="bar-container">
+              <div class="progress-bar html"></div>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-info"><span>CSS3</span><span>85%</span></div>
+            <div class="bar-container">
+              <div class="progress-bar css"></div>
+            </div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-info">
+              <span>JavaScript</span><span>75%</span>
+            </div>
+            <div class="bar-container"><div class="progress-bar js"></div></div>
+          </div>
+          <div class="skill-box">
+            <div class="skill-info">
+              <span>Git / GitHub</span><span>80%</span>
+            </div>
+            <div class="bar-container">
+              <div class="progress-bar git"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="work tab-content">
       <div class="max-width">
         <h2 class="title">Works</h2>
-        <div class="work-content">
-          <a href="https://hcj-regular.vercel.app/" class="work-card">
-            <img src="img/work1.png" alt="작업물 1" />
-            <h3>HCJ_Demo</h3>
-          </a>
-          <a href="https://hcj2-pi.vercel.app/" class="work-card">
-            <img src="img/work2.png" alt="작업물 2" />
-            <h3>HCJ_regular</h3>
-          </a>
-          <a href="https://middle-project-plum.vercel.app/" class="work-card">
-            <img src="img/work3.png" alt="작업물 3" />
-            <h3>team_project</h3>
-          </a>
+        <div class="card-container">
+          <div class="custom-card">
+            <div class="card-img-box">
+              <img src="img/work1.png" alt="작업물 1" />
+            </div>
+            <div class="card-text-box">
+              <h3>HCJ_Demo</h3>
+              <p>HTML, CSS, JavaScript를 활용한 기초 데모 프로젝트입니다.</p>
+              <div class="card-links">
+                <a
+                  href="https://hcj-regular.vercel.app/"
+                  target="_blank"
+                  class="card-link-btn"
+                  ><i class="fas fa-globe"></i> Live</a
+                >
+                <a
+                  href="https://github.com/initalk/HCJ"
+                  target="_blank"
+                  class="card-link-btn sub"
+                  ><i class="fab fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="custom-card">
+            <div class="card-img-box">
+              <img src="img/work2.png" alt="작업물 2" />
+            </div>
+            <div class="card-text-box">
+              <h3>HCJ_regular</h3>
+              <p>정기적인 실습과 레이아웃 훈련을 위해 제작된 웹페이지입니다.</p>
+              <div class="card-links">
+                <a
+                  href="https://hcj2-pi.vercel.app/"
+                  target="_blank"
+                  class="card-link-btn"
+                  ><i class="fas fa-globe"></i> Live</a
+                >
+                <a
+                  href="https://github.com/initalk/HCJ_Regular"
+                  target="_blank"
+                  class="card-link-btn sub"
+                  ><i class="fab fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="custom-card">
+            <div class="card-img-box">
+              <img src="img/work3.png" alt="작업물 3" />
+            </div>
+            <div class="card-text-box">
+              <h3>team_project</h3>
+              <p>팀원들과 협업하여 구현한 메뉴 추천 프로젝트입니다.</p>
+              <div class="card-links">
+                <a
+                  href="https://middle-project-plum.vercel.app/"
+                  target="_blank"
+                  class="card-link-btn"
+                  ><i class="fas fa-globe"></i> Live</a
+                >
+                <a
+                  href="https://github.com/initalk/middle_project"
+                  target="_blank"
+                  class="card-link-btn sub"
+                  ><i class="fab fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="custom-card">
+            <div class="card-img-box">
+              <img src="img/work4.png" alt="작업물 4" />
+            </div>
+            <div class="card-text-box">
+              <h3>team_project2</h3>
+              <p>
+                팀원들과 협업하여 구현한 메뉴 추천 프로젝트의 최종버전입니다.
+              </p>
+              <div class="card-links">
+                <a
+                  href="https://final-omega-lac.vercel.app/"
+                  target="_blank"
+                  class="card-link-btn"
+                  ><i class="fas fa-globe"></i> Live</a
+                >
+                <a
+                  href="https://github.com/initalk/final"
+                  target="_blank"
+                  class="card-link-btn sub"
+                  ><i class="fab fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- insight 섹션 -->
-    <section id="insights" class="blog">
+    <section id="insights" class="blog tab-content">
       <div class="max-width">
         <h2 class="title">Blog</h2>
-        <div class="blog-content">
-          <div class="left">
-            <a href="https://github.com/initalk">
-              <div class="site">
-                <div class="site-img">
-                  <img src="img/github.png" alt="" />
-                  <div class="site-text">GitHub</div>
-                  <p>프로젝트 소스 코드와 버전 관리를 위한 블로그입니다.</p>
-                </div>
+        <div class="card-container">
+          <div class="custom-card">
+            <div class="card-img-box">
+              <img src="img/github.png" alt="GitHub" />
+            </div>
+            <div class="card-text-box">
+              <h3>GitHub</h3>
+              <p>프로젝트 소스 코드와 버전 관리를 위한 개발 저장소입니다.</p>
+              <div class="card-links">
+                <a
+                  href="https://github.com/initalk"
+                  target="_blank"
+                  class="card-link-btn"
+                  ><i class="fas fa-link"></i> 방문하기</a
+                >
               </div>
-            </a>
+            </div>
           </div>
-          <div class="center">
-            <a href="https://blog.naver.com/initalk">
-              <div class="site">
-                <div class="site-img">
-                  <img src="img/blog.png" alt="" />
-                  <div class="site-text">BLOG</div>
-                  <p>
-                    웹 사이트를 만드는 과정, 일상 등을 공유하는 블로그입니다.
-                  </p>
-                </div>
+          <div class="custom-card">
+            <div class="card-img-box">
+              <img src="img/blog.png" alt="Naver Blog" />
+            </div>
+            <div class="card-text-box">
+              <h3>BLOG</h3>
+              <p>웹 사이트를 만드는 과정, 일상 등을 공유하는 블로그입니다.</p>
+              <div class="card-links">
+                <a
+                  href="https://blog.naver.com/initalk"
+                  target="_blank"
+                  class="card-link-btn"
+                  ><i class="fas fa-link"></i> 방문하기</a
+                >
               </div>
-            </a>
+            </div>
           </div>
-          <div class="right">
-            <a href="https://vercel.com/initalks-projects">
-              <div class="site">
-                <div class="site-img">
-                  <img src="img/vercel.png" alt="" />
-                  <div class="site-text">Vercel</div>
-                  <p>
-                    다른 사용자들이 웹 사이트에 접속할 수 있도록 하는
-                    블로그입니다.
-                  </p>
-                </div>
+          <div class="custom-card">
+            <div class="card-img-box">
+              <img src="img/vercel.png" alt="Vercel" />
+            </div>
+            <div class="card-text-box">
+              <h3>Vercel</h3>
+              <p>
+                다른 사용자들이 웹 사이트에 접속할 수 있도록 배포한
+                페이지입니다.
+              </p>
+              <div class="card-links">
+                <a
+                  href="https://vercel.com/initalks-projects"
+                  target="_blank"
+                  class="card-link-btn"
+                  ><i class="fas fa-link"></i> 방문하기</a
+                >
               </div>
-            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact tab-content">
+      <div class="max-width">
+        <h2 class="title">Contact Me</h2>
+        <div class="contact-container">
+          <div class="contact-info-card">
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div class="info-text">
+                <h3>Email</h3>
+                <p>initalk@naver.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-university"></i>
+              <div class="info-text">
+                <h3>Education</h3>
+                <p>중부대학교 재학 중 (2학년)</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fab fa-github"></i>
+              <div class="info-text">
+                <h3>GitHub</h3>
+                <p>github.com/initalk</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -129,5 +385,7 @@
         reserved</span
       >
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>

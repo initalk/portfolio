@@ -10,22 +10,26 @@
     width: 350px;
   }
 }
+
 @media (max-width: 899px) {
   .navbar .menu-btn {
-    display: inline;
-    z-index: 999;
+    display: flex;
+    z-index: 1001;
   }
 
-  .nevbar .menubar {
+  .navbar .menubar {
     position: fixed;
     height: 100vh;
     width: 100%;
     left: -100%;
     top: 0;
-    background: #111;
+    background: rgb(13, 13, 61);
     text-align: center;
-    padding-top: 80px;
+    padding-top: 100px;
     transition: all 0.3s ease;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
   }
 
   .navbar .menubar.active {
@@ -34,48 +38,50 @@
 
   .navbar .menubar li {
     display: block;
+    margin: 18px 0;
   }
 
   .navbar .menubar li a {
     display: inline-block;
-    margin: 20px 0;
-    font-size: 25px;
+    font-size: 24px;
+    margin-left: 0;
   }
 
-  .home .home-content .text-2 {
-    font-size: 70px;
+  .dark-mode-li {
+    margin-left: 0 !important;
+    margin-top: 10px;
   }
 
-  .about .about-content .column {
-    width: 100%;
+  .dark-btn {
+    font-size: 26px;
   }
 
+  .navbar .menu-btn.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar .menu-btn.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .navbar .menu-btn.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .home .home-section .text-2 {
+    font-size: 55px;
+  }
   .about .about-content .left {
     display: flex;
     justify-content: center;
-    margin: 0 auto 60px;
+    margin: 0 auto 40px;
   }
   .max-width {
     max-width: 800px;
   }
 }
 
-/* 기본 스타일은 지금 작성하신 CSS 유지 */
-
-/* 모바일 화면용 (예: 최대 768px 이하) */
 @media screen and (max-width: 768px) {
-  /* navbar */
-  .navbar .logo {
-    text-align: center;
-    width: 100%;
-  }
-  .navbar .menubar {
-    display: none; /* 메뉴 숨기기 */
-  }
-
-  /* about 섹션 */
   .about-content {
-    flex-direction: column; /* 세로 정렬 */
+    flex-direction: column;
     align-items: center;
   }
   .about-content .left,
@@ -84,54 +90,27 @@
     text-align: center;
   }
   .about-content img {
-    max-width: 80%; /* 이미지 크기 조정 */
+    max-width: 80%;
     height: auto;
     margin-bottom: 20px;
   }
 
-  /* work 섹션 */
-  @media screen and (max-width: 768px) {
-    .work-content {
-      flex-direction: column; /* 세로 정렬 */
-      align-items: center; /* 가운데 정렬 */
-      padding: 0; /* 좌우 여백 제거 */
-    }
-
-    .work-card {
-      width: 90%; /* 화면 폭에 맞게 줄이기 */
-      max-width: 350px; /* 너무 커지지 않도록 제한 */
-      margin-bottom: 20px; /* 카드 간격 */
-    }
-
-    .work-card img {
-      width: 100%; /* 카드 폭에 맞게 줄어듦 */
-      height: auto; /* 비율 유지 */
-      border-radius: 6px;
-    }
-  }
-
-  /* insight 섹션 */
-  .blog .blog-content {
+  .card-container {
     flex-direction: column;
     align-items: center;
+    gap: 25px;
   }
-
-  .blog .blog-content .left,
-  .blog .blog-content .center,
-  .blog .blog-content .right {
+  .custom-card {
     width: 90%;
-    margin-bottom: 20px;
+    max-width: 360px;
   }
 
-  .blog .blog-content a {
-    width: 100%;
-    justify-content: center;
+  .skills-content {
+    width: 90%;
   }
 
-  .blog .blog-content .site img {
-    width: 100px; /* 모바일에서 더 작게 */
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
+  .contact-info-card {
+    width: 90%;
+    padding: 25px;
   }
 }

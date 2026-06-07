@@ -1,7 +1,7 @@
 footer {
-  background-color: black;
-  padding: 20px 20px;
-  color: white;
+  background: rgb(13, 13, 61);
+  padding: 20px 0;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -12,9 +12,4 @@ footer span a {
 
 footer span a:hover {
   text-decoration: underline;
-}
-
-footer span a:visited,
-footer span a:active {
-  text-decoration: none;
 }

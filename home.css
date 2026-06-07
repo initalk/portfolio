@@ -1,6 +1,8 @@
-.home {
+#home {
   display: flex;
-  background: url('img/wp10314890-1920x1020-wallpapers.jpg') no-repeat center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('img/wp10314890-1920x1020-wallpapers.jpg') no-repeat center;
   height: 100vh;
   background-size: cover;
   min-height: 500px;
@@ -8,20 +10,50 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-.home .max-width {
+#home .max-width {
   margin: auto 0 auto 40px;
 }
 
-.home .home-section .text-1 {
+#home .home-section .text-1 {
   font-size: 30px;
 }
 
-.home .home-section .text-2 {
+#home .home-section .text-2 {
   font-size: 75px;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
-.home .home-section .text-2 span {
+#home .home-section .text-2 span {
   color: rgb(255, 164, 45);
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: rgb(255, 164, 45);
+  color: white;
+  border-radius: 30px;
+  font-size: 18px;
   font-weight: 600;
+  text-decoration: none;
+  font-family: 'Segoe UI', sans-serif;
+  transition:
+    background 0.3s,
+    transform 0.2s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.home-btn i {
+  margin-left: 6px;
+  transition: transform 0.2s;
+}
+
+.home-btn:hover {
+  background-color: #ff931e;
+  transform: translateY(-2px);
+}
+
+.home-btn:hover i {
+  transform: translateX(4px);
 }
